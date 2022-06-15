@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2655852028471050380}
   - component: {fileID: 7388337525734768346}
   - component: {fileID: -1114696608098815484}
+  - component: {fileID: 148367448847575328}
+  - component: {fileID: 6857350043415189422}
   m_Layer: 0
   m_Name: Tire Stack
   m_TagString: Tire Stack
@@ -49,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4924f338ac432ee46a5eb39c1553fa0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 148367448847575328}
   speed: 5
 --- !u!23 &-1114696608098815484
 MeshRenderer:
@@ -92,6 +95,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &148367448847575328
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2650830723729794624}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c8bde11e68447c4ea326e357dc2c7cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6857350043415189422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2650830723729794624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2651510843690445222
 GameObject:
   m_ObjectHideFlags: 0

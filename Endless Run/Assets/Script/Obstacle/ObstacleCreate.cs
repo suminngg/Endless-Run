@@ -6,7 +6,6 @@ public class ObstacleCreate : MonoBehaviour
 {
     public GameObject obstacle;
 
-
     private void OnTriggerEnter(Collider other)
     {
         if(other.name == "Character")

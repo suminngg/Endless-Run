@@ -9,6 +9,8 @@ public class Control : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.instance.condition == false) return;
+
         if (Input.GetKeyDown(KeyCode.LeftArrow) && count > -2)
         {
             count--;
@@ -20,14 +22,13 @@ public class Control : MonoBehaviour
             count++;
             transform.position += Vector3.right;
         }
-
-
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Tire Stack")
         {
+            GameManager.instance.condition = false;
             animator.SetTrigger("Death");
         }
     }

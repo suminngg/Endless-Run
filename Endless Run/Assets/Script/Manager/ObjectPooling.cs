@@ -18,7 +18,7 @@ public class ObjectPooling : MonoBehaviour
 
         for(int i = 0; i < 5; i++)
         {
-            GameObject obj = Instantiate(tire, new Vector3(0, 0, 5), Quaternion.identity);
+            GameObject obj = Instantiate(tire, new Vector3(0, 0.1f, 5), Quaternion.identity);
             queue.Enqueue(obj);
             obj.SetActive(false);
         }
