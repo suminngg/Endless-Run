@@ -8,5 +8,6 @@ public class SceneMove : MonoBehaviour
     public void SceneNumber(string name)
     {
         SceneManager.LoadScene(name);
+        GameManager.instance.condition = true;
     }
 }

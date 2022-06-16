@@ -27,9 +27,10 @@ public class Control : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Tire Stack")
-        {
+        {         
             GameManager.instance.condition = false;
             animator.SetTrigger("Death");
+            UIManager.instance.UIActive();
         }
     }
 

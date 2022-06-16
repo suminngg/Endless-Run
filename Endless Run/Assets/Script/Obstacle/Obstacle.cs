@@ -6,7 +6,7 @@ public class Obstacle : MonoBehaviour
 {
     public Animator animator;
     public float speed = 5.0f;
-     
+
     void Update()
     {
         if (GameManager.instance.condition == false) return;
